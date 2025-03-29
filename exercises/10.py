@@ -4,32 +4,39 @@ a = []
 b = []
 c = []
 
-x = random.randint(1, 100)
-y = random.randint(1, 100)
-r = 0
+stop1 = 0
+stop2 = 0
 
-while True:
-    if x < y:
-        r = range(x, y)
+
+while stop1 != 1:
+    x = random.randint(1, 100)
+    y = random.randint(1, 100)
+    if x > y:
         continue
     else:
-        break
+        stop1 += 1
 
-if x < y:
-    for i in r:
-        a.append(i)
+r = range(x, y)
+for i in r:
+    a.append(i)
 
-x = random.randint(1, 100)
-y = random.randint(1, 100)
-if x < y:
-    for i in r:
-        b.append(i)
+while stop2 != 1:
+    x = random.randint(1, 100)
+    y = random.randint(1, 100)
+    if x > y:
+        continue
+    else:
+        stop2 += 1
+        
+r = range(x, y)
+for i in r:
+    b.append(i)
 
 for i in a:
     if i in b:
         c.append(i)
-    else:
-        c = ''
+ 
+c == c if c is not [] else ''
 
 print(f'a = {a}' '\n')
 print(f'b = {b}' '\n')
