@@ -1,4 +1,4 @@
-# List Overlap Comprehensions oi
+# List Overlap Comprehensions
 
 import random
 
