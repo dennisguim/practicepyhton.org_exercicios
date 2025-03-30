@@ -12,9 +12,9 @@ def primo(x):
         return f'{x} é um número primo.'
     else:
         if 0 in check:
-            return f'{x} não é um número primo.'
+            return f'\n{x} não é um número primo. \n'
         else:
-            return f'{x} é um número primo'
+            return f'\n{x} é um número primo. \n'
 
 x = input("Digite um número para checar se ele é primo ou não: ")
 x_1 = ""
