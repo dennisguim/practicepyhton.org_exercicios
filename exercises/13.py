@@ -12,7 +12,7 @@ def fibo(x):
     return fib
 
 
-x = int(input("Quanto número você quer na sequência de Fibonacci? "))
+x = int(input("Quantos números você quer na sequência de Fibonacci? "))
 
 print(fibo(x))
 
