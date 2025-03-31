@@ -9,8 +9,6 @@ def com_loop():
     for i in lista_a:
         if i not in lista_b:
             lista_b.append(i)
-        else:
-            continue
     return lista_b
             
                   
