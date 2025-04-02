@@ -15,9 +15,12 @@ for i in palavra_chave:
     set(alfabeto)
     n = random.randint(0, 25)
     m = random.randint(0, 4)
-    a = (simbolos[m], alfabeto[n])
-    i = a.add(i)
-    senha += i
+    a = set()
+    a.add(simbolos[m])
+    a.add(alfabeto[n])
+    a.add(i)
+    for x in a:
+        senha += x
 
 print(senha)
 
