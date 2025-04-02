@@ -7,7 +7,7 @@ alfabeto = [
     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
     ]
 palavra_chave = 'dennis'
-
+recuperar_chave = ''
 senha = ''
 
 for i in palavra_chave:
@@ -24,4 +24,9 @@ for i in palavra_chave:
 
 print(senha)
 
+for letra in senha:
+    if letra in palavra_chave:
+        recuperar_chave += letra
+
+print(recuperar_chave)
 
