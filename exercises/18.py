@@ -3,24 +3,32 @@
 import random
 
 numero_random = str(random.randint(1000, 9999))
-numero_acertado = '____'
-n = 0
-acertos = ""
-print(numero_random)
+randomico = []
 
-""" for l in numero_acertado:
-    jogador_list.append(l)
- """
+tent_in = []
 
+acertados = []
 
+for i in numero_random:
+    randomico.append(i)
+print(randomico)
 
 while True:
-    numero_jogador = input('Tente um número de 4 dígitos: ')
-    for numero in numero_jogador:
-        if numero_jogador[n] == numero_random[n]:
-            print('cow')
-            n += 1
-        if numero in numero_random:
-            print('bull')
+    n = 0 #resolver, o n ta passando de 3; tem q fazer ele zerar no loop
+    tentativa_input = input('tente: ')
+    for i in tentativa_input:
+        tent_in.append(i)
+    print(tent_in)
     
-           
+    for i in tent_in:
+        if i == randomico[n]:
+            print('cow')
+            acertados.append(i)
+            n += 1
+        else:
+            acertados.append("-")
+            n += 1
+    
+    print(f'n = {n}')
+    print(f'acertados: {acertados}')
+    
